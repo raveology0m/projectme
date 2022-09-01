@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="container">
+        <h4></h4>
+        <div class="line">
+        <div class="address">
+            <h2 class="title">Alamat Pengiriman</h2>
+            <hr>
+            <div class="row">
+                <div></div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="label">Alamat Sebagai</label>
+                        <input type="text" id="label" autocomplete="off" class="form-control my-3" placeholder="Rumah, Kantor, Kos, dll" required name="label">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="name">Nama Penerima</label>
+                        <input type="text" id="name" autocomplete="off" class="form-control my-3" required name="name">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="telp">Nomor Telepon</label>
+                        <input type="number" id="telp" autocomplete="off" class="form-control my-3" required name="telp">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="zipcode">Kode Pos</label>
+                        <input type="number" id="zipcode" autocomplete="off" class="form-control my-3" required name="zipcode">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="paymentSelectProvinces">Provinsi</label>
+                        <select name="paymentSelectProvinces" id="paymentSelectProvinces" class="form-select my-3" required>
+                            <option  value="1">Choose..</option>
+                            <option value="2">Jawa Barat</option>
+                            <option value="3">Jawa Barat</option>
+                            <option value="4">Jawa Barat</option>
+                            <option value="5">Jawa Barat</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="paymentSelectRegencies">Kabupaten/Kota</label>
+                        <select name="paymentSelectRegencies" id="paymentSelectRegencies" class="form-select my-3" required>
+                            <option value="1">Bandung</option>
+                            <option value="2">Cianjur</option>
+                            <option value="3">Garut</option>
+                            <option value="4">Kab. Bandung Barat</option>
+                            <option value="5">Subang</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="district">Kecamatan</label>
+                        <input type="text" class="form-control my-3" autocomplete="off" id="district" name="district" required>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="village">Desa/Kelurahan</label>
+                        <input type="text" class="form-control my-3" autocomplete="off" id="village" name="village" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="address">Alamat</label>
+                    <textarea name="address" id="address" class="form-control my-3" placeholder="Isi dengan nama jalan, nomor rumah, nama gedung, dsb" required></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="line mt-4"></div>
+        <div class="send">
+            <label for="metode">Metode Pengiriman</label>
+            <small class="text-danger" id="paymentTextNotSupportDelivery" style="display: none;">Metode antar belum tersedia untuk tempat Anda.</small>
+            <div class="form-group mt-3" id="groupPaymentSelectKurir">
+                <select name="paymentSelectKurir" id="paymentSelectKurir" class="form-control" required>
+                    <option></option>
+                </select>
+            </div>
+        </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/21a2c3231b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
